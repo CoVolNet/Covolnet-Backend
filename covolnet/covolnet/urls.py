@@ -15,6 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.views.generic.base import TemplateView
+
 
 # default: "Django Administration"
 admin.site.site_header = 'CoVolNet'
@@ -25,6 +27,26 @@ admin.site.site_title = 'CoVolNet'
 
 
 urlpatterns = [
-    # path('api/forms/', include('formsapp.urls')),
     path('admin/', admin.site.urls),
+    path('api/forms/', include('formsapp.urls')),
+    path('api-auth/', include('rest_framework.urls')),
+
+
+
+    # Templates
+    path('', TemplateView.as_view(template_name='index.html')),
+    path('index.html', TemplateView.as_view(template_name='index.html')),
+    path('Ambulance.html/', TemplateView.as_view(template_name='Ambulance.html')),
+    path('form.html', TemplateView.as_view(template_name='form.html')),
+    path('O2.html', TemplateView.as_view(template_name='O2.html')),
+    path('oldform.html', TemplateView.as_view(template_name='oldform.html')),
+    path('rapidindex.html', TemplateView.as_view(
+        template_name='rapidindex.html')),
+    path('requesthelp.html', TemplateView.as_view(
+        template_name='requesthelp.html')),
+
+
+
+
+
 ]

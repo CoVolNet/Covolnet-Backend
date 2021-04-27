@@ -2,7 +2,7 @@ from django.db import models
 from django.contrib.postgres.fields import ArrayField
 
 
-class VolunteerRegistration(models.Model):
+class VolunteerModel(models.Model):
 
     name = models.CharField(max_length=50, null=False, blank=False)
     state = models.CharField(max_length=100)
@@ -11,11 +11,7 @@ class VolunteerRegistration(models.Model):
     phone = models.CharField(max_length=12)
     whatsapp = models.CharField(max_length=12)
     created_date = models.DateTimeField(auto_now_add=True)
-    # created_date.editable = True
     verified = models.BooleanField(default=False)
 
     def __str__(self):
         return self.name
-
-    class Meta(object):
-        ordering = ['verified']
