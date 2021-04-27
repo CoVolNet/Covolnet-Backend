@@ -1,8 +1,10 @@
 
 from django.urls import path, include
+from .views import VolunteerView
 
 
-# urlpatterns = [
-#     # path('api/forms/', include('formsapp.urls')),
+urlpatterns = [
+    path('volunteer/', VolunteerView.as_view()),
 
-# ]
+
+]
