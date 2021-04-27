@@ -6,7 +6,7 @@ from .models import VolunteerModel
 @admin.register(VolunteerModel)
 class AdminVolunteerModel(admin.ModelAdmin):
     list_display = ['name', 'state', 'district',
-                    'languages', 'verified', 'created_date']
+                    'languages', 'verified', 'active', 'rejected', 'preferred_days', 'preferred_timings', 'preferred_work']
     search_fields = ['name', 'state', 'district',
-                     'languages', 'phone', 'whatsapp', ]
-    readonly_fields = ['created_date', ]
+                     'languages', 'phone', 'whatsapp', 'preferred_days']
+    readonly_fields = ['joined_date', ]

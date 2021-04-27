@@ -6,4 +6,4 @@ class VolunteerSerializer(serializers.ModelSerializer):
     class Meta:
         model = VolunteerModel
         fields = '__all__'
-        read_only_fields = ['created_date', 'verified', ]
+        read_only_fields = ['joined_date', 'verified', 'active', 'rejected']
