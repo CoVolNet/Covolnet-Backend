@@ -25,6 +25,7 @@ class VolunteerModel(models.Model):
                                 ('MONDAY', 'MONDAY'), ('TUESDAY', 'TUESDAY'), ('WEDNESDAY', 'WEDNESDAY'), ('THURSDAY', 'THURSDAY'), ('FRIDAY', 'FRIDAY'), ('SATURDAY', 'SATURDAY'), ('SUNDAY', 'SUNDAY'), ], max_length=10),  blank=True, null=True)
     preferred_timings = ArrayField(models.CharField(choices=[
         ('7AM-10AM', '7AM-10AM'), ('10AM-1PM', '10AM-1PM'), ('1PM-4PM', '1PM-4PM'), ('4PM-7PM', '4PM-7PM'), ('7PM-9PM', '7PM-9PM'), ('9PM-11PM', '9PM-11PM'), ('11PM-1AM', '11PM-1AM'), ('1AM-3AM', '1AM-3AM'), ('3AM-5AM', '3AM-5AM'), ('5AM-7AM', '5AM-7AM'), ], max_length=10),  blank=True, null=True)
+    specific_skills = models.TextField(null=True, blank=False)
 
     def __str__(self):
         return self.name
