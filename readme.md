@@ -1,5 +1,7 @@
 ## Installation
 
+python version == 3.8
+
 ```
 cd covolnet
 pip install -r requirements.txt
