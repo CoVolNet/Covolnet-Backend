@@ -22,7 +22,7 @@ body {
   padding-left: 35px;
   margin-bottom: 12px;
   cursor: pointer;
-  font-size: 18px;
+  font-size: var(--font-size-m);
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;

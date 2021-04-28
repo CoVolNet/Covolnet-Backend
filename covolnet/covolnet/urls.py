@@ -40,7 +40,7 @@ urlpatterns = [
         template_name='Ambulance.html')),
     path('form.html', TemplateView.as_view(template_name='form.html')),
     path('O2.html', TemplateView.as_view(template_name='O2.html')),
-    path('oldform.html', TemplateView.as_view(template_name='oldform.html')),
+    path('2ndform.html', TemplateView.as_view(template_name='2ndform.html')),
     path('rapidindex.html', TemplateView.as_view(
         template_name='rapidindex.html')),
     path('requesthelp.html', TemplateView.as_view(

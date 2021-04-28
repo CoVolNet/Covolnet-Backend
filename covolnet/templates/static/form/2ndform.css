@@ -6,6 +6,17 @@
   overflow: hidden;
   width: 1024px;
 }
+
+.texthead {
+  font-family: "Montserrat", sans-serif;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 7px;
+  text-align: center;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
 .vol-reg-form-page-2 .ellipse-1 {
   border-radius: 11.5px;
   height: 23px;
@@ -13,6 +24,122 @@
   position: absolute;
   top: 259px;
   width: 23px;
+}
+.insta-textbox {
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 340px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+.twitter-textbox {
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 340px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+.spec-skill {
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 340px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+.button {
+  border-radius: 10px;
+  background-color: rgba(100, 124, 151, 1);
+  height: 70px;
+  left: -5;
+  position: absolute;
+  top: -25;
+  width: 200px;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
 }
 .vol-reg-form-page-2 .ellipse-10 {
   border-radius: 11.5px;
@@ -220,7 +347,7 @@
 }
 .vol-reg-form-page-2 .overlap-group {
   align-items: flex-end;
-  background-color: var(--geyser);
+  background-color: rgba(209, 221, 235, 1);
   display: flex;
   flex-direction: column;
   min-height: 2441px;
@@ -229,10 +356,10 @@
 }
 .vol-reg-form-page-2 .overlap-group1 {
   align-self: center;
-  background-color: var(--white);
+  background-color: white;
   border-radius: 45px;
   height: 2187px;
-  margin-left: 1.0px;
+  margin-left: 1px;
   position: relative;
   width: 869px;
 }
@@ -448,8 +575,8 @@
   width: 187px;
 }
 .vol-reg-form-page-2 .x-required-fields {
-  color: var(--red);
-  font-family: var(--font-family-montserrat);
+  color: red;
+  font-family: var(--font-family-montserrat-regular);
   font-size: var(--font-size-s);
   left: 80px;
   letter-spacing: 0;
@@ -457,6 +584,16 @@
   position: absolute;
   top: 149px;
   width: 708px;
+  /* --------------------------------- */
+  /* color: var(--black);
+   
+    font-size: var(--font-size-s);
+    letter-spacing: 0px;
+    line-height: 15px;
+    margin-right: 1px;
+    margin-top: 38px;
+    min-height: 21px;
+    width: 708px; */
 }
 .vol-reg-form-page-2 .x10am-1pm {
   height: 32px;
