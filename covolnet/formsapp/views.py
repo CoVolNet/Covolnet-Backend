@@ -12,7 +12,7 @@ from .serializers import VolunteerSerializer
 
 class VolunteerView(APIView):
 
-    parser_classes = [JSONParser, ]
+    # parser_classes = [JSONParser, ]
 
     def get(self, request, format=None):
         queryset = VolunteerModel.objects.all()
