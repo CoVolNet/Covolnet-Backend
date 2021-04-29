@@ -1,8 +1,12 @@
 ## Installation
 
+python version == 3.8
+
 ```
 cd covolnet
 pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
 python manage.py runserver
 
 ```
