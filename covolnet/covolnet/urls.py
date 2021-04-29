@@ -38,13 +38,15 @@ urlpatterns = [
     path('index.html', TemplateView.as_view(template_name='index.html')),
     path('Ambulance.html', TemplateView.as_view(
         template_name='Ambulance.html')),
-    path('form.html', TemplateView.as_view(template_name='form.html')),
+    path('formreg.html', TemplateView.as_view(template_name='formreg.html')),
     path('O2.html', TemplateView.as_view(template_name='O2.html')),
     path('2ndform.html', TemplateView.as_view(template_name='2ndform.html')),
     path('rapidindex.html', TemplateView.as_view(
         template_name='rapidindex.html')),
     path('requesthelp.html', TemplateView.as_view(
         template_name='requesthelp.html')),
+		path('formreg2.html', TemplateView.as_view(
+        template_name='formreg2.html')),
 
 
 
