@@ -2,7 +2,7 @@
 
 python version == 3.8
 
-```
+```shell
 cd covolnet
 pip install -r requirements.txt
 python manage.py makemigrations
@@ -11,13 +11,13 @@ python manage.py runserver
 
 ```
 
-In `covolnet/covolnet/settings.py` provide valid database credentrials
+In ```covolnet/covolnet/settings.py``` provide valid database credentrials
 
 
 ## API DOCS
 
 ### New Volunteer
-```   
+```json
  {
         "name": "fdhhfn",
         "email": "yjmgm@mail.com",
