@@ -1,0 +1,600 @@
+.ambulance-form-provider {
+  align-items: flex-end;
+  background-color: rgba(209, 221, 235, 1);
+  display: flex;
+  flex-direction: column;
+  height: 1900px;
+  width: 1024px;
+
+}
+.ambulance-form-provider .about-us {
+  font-family: 'Open Sans' ,sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  margin-left: 2px;
+  margin-top: 2.0px;
+  min-height: 22px;
+  min-width: 96px;
+  white-space: nowrap;
+  width: 96px;
+}
+.ambulance-form-provider .contact-us {
+  font-family: 'Open Sans' , sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  margin-left: 26px;
+  margin-top: 2.0px;
+  min-height: 22px;
+  white-space: nowrap;
+}
+.ambulance-form-provider .covid-19-india {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  margin-left: 2px;
+  margin-top: 2.0px;
+  min-height: 22px;
+  min-width: 140px;
+  white-space: nowrap;
+  width: 140px;
+}
+.ambulance-form-provider .district {
+  height: 35px;
+  left: 305px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: -151px;
+  width: 122px;
+}
+.ambulance-form-provider .ellipse- {
+  border-radius: 11.5px;
+  height: 23px;
+  width: 23px;
+}
+.ambulance-form-provider .flex-col {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  min-height: 81px;
+  width: 254px;
+}
+.ambulance-form-provider .flex-col-1 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-right: -4px;
+  min-height: 965px;
+  width: 793px;
+}
+.ambulance-form-provider .flex-col-2 {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  margin-right: -4px;
+  margin-top: 17px;
+  min-height: 430px;
+  width: 793px;
+}
+.ambulance-form-provider .flex-row {
+  align-items: center;
+  display: flex;
+  height: 81px;
+  margin-right: -4px;
+  margin-top: 17px;
+  min-width: 792px;
+}
+.ambulance-form-provider .flex-row-1 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 1px;
+  margin-top: 17px;
+  min-width: 154px;
+}
+.ambulance-form-provider .flex-row-2 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 1px;
+  margin-top: 17px;
+  min-width: 237px;
+}
+.ambulance-form-provider .flex-row-3 {
+  align-items: flex-start;
+  display: flex;
+  margin-left: 1px;
+  min-width: 314px;
+}
+.ambulance-form-provider .flex-row-4 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 17px;
+  min-width: 254px;
+}
+.ambulance-form-provider .flex-row-5 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 254px;
+}
+.ambulance-form-provider .free {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 110px;
+}
+.ambulance-form-provider .full-name {
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: 17px;
+  min-height: 24px;
+  width: 708px;
+}
+.ambulance-form-provider .group-6 {
+  align-items: flex-start;
+  display: flex;
+  margin-top: 41px;
+  min-width: 172px;
+}
+.ambulance-form-provider .help {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  left: 0;
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 47px;
+}
+.ambulance-form-provider .icu-ambulance {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 210px;
+}
+.ambulance-form-provider .location {
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 1px;
+  margin-top: 41px;
+  min-height: 24px;
+  width: 204px;
+}
+.ambulance-form-provider .other {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 110px;
+}
+.ambulance-form-provider .overlap-group {
+  align-items: flex-end;
+  font-family: 'Montserrat', sans-serif;
+  align-self: center;
+  background-color: white;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.0px;
+  margin-top: 65px;
+  min-height: 1633px;
+  padding: 60px 0;
+  width: 869px;
+}
+.ambulance-form-provider .overlap-group1 {
+  font-family: 'Times New Roman', Times, serif;
+  align-items: flex-start;
+  background-color: white;
+  box-shadow: 0px 5px 10px #102b403d;
+  display: flex;
+  height: 86px;
+  justify-content: flex-end;
+  min-width: 1024px;
+  padding: 19.5px 26px;
+}
+.ambulance-form-provider .overlap-group10 {
+  height: 60px;
+  margin-top: 18px;
+  position: relative;
+  width: 793px;
+}
+.ambulance-form-provider .overlap-group2 {
+  height: 95px;
+  left: 78px;
+  position: absolute;
+  top: 23px;
+  width: 695px;
+}
+.ambulance-form-provider .overlap-group3 {
+  align-self: flex-end;
+  height: 90px;
+  margin-top: 158px;
+  position: relative;
+  width: 714px;
+}
+.ambulance-form-provider .overlap-group4 {
+  height: 51px;
+  left: 306px;
+  position: absolute;
+  top: 9px;
+  width: 487px;
+}
+.ambulance-form-provider .overlap-group5 {
+  height: 51px;
+  margin-left: 51px;
+  margin-top: 10.0px;
+  position: relative;
+  width: 487px;
+}
+.ambulance-form-provider .overlap-group6 {
+  height: 50px;
+  position: relative;
+  width: 172px;
+}
+.ambulance-form-provider .overlap-group7 {
+  height: 27px;
+  margin-left: 29px;
+  margin-top: 2.0px;
+  position: relative;
+  width: 55px;
+}
+.ambulance-form-provider .overlap-group8 {
+  height: 45px;
+  position: relative;
+  width: 355px;
+}
+.ambulance-form-provider .overlap-group9 {
+  height: 118px;
+  margin-top: 27px;
+  position: relative;
+  width: 773px;
+}
+.ambulance-form-provider .paid {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 110px;
+}
+.ambulance-form-provider .path-1 {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  height: 6px;
+  left: 45px;
+  object-fit: cover;
+  position: absolute;
+  top: 21px;
+  width: 11px;
+}
+.ambulance-form-provider .phone-number {
+  height: 50px;
+  left: -78px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: -151px;
+  width: 695px;
+}
+.ambulance-form-provider .place {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  left: 281px;
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  position: absolute;
+  top: 2px;
+  white-space: nowrap;
+  width: 74px;
+}
+.ambulance-form-provider .please-specify {
+  height: 32px;
+  left: -78px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: -141px;
+  width: 152px;
+}
+.ambulance-form-provider .rectangle-36 {
+  background-color: var(--link-water);
+  height: 51px;
+  margin-left: 1px;
+  margin-top: 24px;
+  width: 706px;
+}
+.ambulance-form-provider .rectangle-37 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: -78px;
+  position: absolute;
+  top: -112px;
+  width: 346px;
+}
+.ambulance-form-provider .rectangle-38 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: 305px;
+  position: absolute;
+  top: -112px;
+  width: 331px;
+}
+.ambulance-form-provider .rectangle-40 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: -78px;
+  position: absolute;
+  top: -107px;
+  width: 370px;
+}
+.ambulance-form-provider .rectangle-41 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: 0;
+  position: absolute;
+  top: 63px;
+  width: 370px;
+}
+.ambulance-form-provider .rectangle-42 {
+  background-color: var(--lynch);
+  border-radius: 10px;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 170px;
+}
+.ambulance-form-provider .rectangle-43 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: 72px;
+  position: absolute;
+  top: -151px;
+  width: 337px;
+}
+.ambulance-form-provider .rectangle-44 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 370px;
+}
+.ambulance-form-provider .rectangle-45 {
+  background-color: var(--link-water);
+  height: 51px;
+  left: 7px;
+  position: absolute;
+  top: -151px;
+  width: 402px;
+}
+.ambulance-form-provider .required-fields {
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-top: 48px;
+  min-height: 21px;
+  width: 708px;
+}
+.ambulance-form-provider .service-charge {
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 1px;
+  margin-top: 46px;
+  min-height: 24px;
+  width: 708px;
+}
+.ambulance-form-provider .services {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: 600;
+  align-self: center;
+  letter-spacing: 0.30px;
+  line-height: 15px;
+  margin-left: 2px;
+  margin-top: 4.0px;
+  min-height: 22px;
+  min-width: 32px;
+  white-space: nowrap;
+}
+.ambulance-form-provider .services-1 {
+  font-family: 'Open Sans' ,sans-serif;
+  font-weight: 600;
+  letter-spacing: 0.30px;
+  line-height: 40px;
+  margin-left: 11px;
+  margin-top: 2.0px;
+  min-height: 22px;
+  min-width: 92px;
+  white-space: nowrap;
+  width: 92px;
+}
+.ambulance-form-provider .span0 {
+  color: var(--black);
+  font-family: var(--font-family-montserrat-semibold);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+}
+.ambulance-form-provider .span1 {
+  color: #006fff;
+  font-family: var(--font-family-montserrat-regular);
+  text-decoration: underline;
+}
+.ambulance-form-provider .span1-1 {
+  color: red;
+  font-family: var(--font-family-montserrat-regular);
+  font-size: var(--font-size-s2);
+}
+.ambulance-form-provider .span1-2 {
+  color: red;
+  font-family: var(--font-family-montserrat-regular);
+  font-size: var(--font-size-m);
+}
+.ambulance-form-provider .span1-3 {
+  color: red;
+  font-family: var(--font-family-montserrat-semibold);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+}
+.ambulance-form-provider .submit {
+  color: var(--white);
+  font-family: var(--font-family-montserrat-semibold);
+  font-size: var(--font-size-m);
+  font-weight: 600;
+  height: 30px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  width: 172px;
+}
+.ambulance-form-provider .surname {
+  height: 32px;
+  left: -78px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: -141px;
+  width: 152px;
+}
+.ambulance-form-provider .text-1 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size:xx-large;
+  font-weight: 700;
+  letter-spacing: 0;
+  line-height: 32px;
+  margin-left: 0px;
+  min-height: 41px;
+  width: 737px;
+}
+.ambulance-form-provider .text-2 {
+  height: 41px;
+  left: -78px;
+  letter-spacing: 0;
+  line-height: 18px;
+  position: absolute;
+  top: -151px;
+  width: 442px;
+}
+.ambulance-form-provider .text-3 {
+  height: 45px;
+  left: 0;
+  letter-spacing: 0;
+  line-height: 40px;
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  width: 668px;
+}
+.ambulance-form-provider .text-4 {
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 1px;
+  margin-top: 48px;
+  min-height: 24px;
+  width: 708px;
+}
+.ambulance-form-provider .text-5 {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 270px;
+}
+.ambulance-form-provider .text-6 {
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16;
+  height: 47px;
+  letter-spacing: 0;
+  line-height: 16px;
+  margin-right: 6px;
+  margin-top: 35px;
+  min-height: 47px;
+  min-width: 941px;
+  width: 941px;
+}
+.ambulance-form-provider .text-7 {
+  height: 45px;
+  letter-spacing: 0;
+  line-height: 40px;
+  margin-top: 37px;
+  min-height: 45px;
+  white-space: nowrap;
+}
+.ambulance-form-provider .text-8 {
+  color: var(--black);
+  font-family: var(--font-family-montserrat);
+  font-size: var(--font-size-s2);
+  letter-spacing: 0;
+  line-height: 15px;
+  margin-top: 20px;
+  min-height: 21px;
+  width: 708px;
+}
+.ambulance-form-provider .title {
+  color: #413e66;
+    font-family: 'Montserrat', sans-serif;
+    font-size: xx-large;
+    left: 0;
+    letter-spacing: 0.70px;
+    line-height: 40px;
+    position: absolute;
+    top: -20;
+    white-space: nowrap;
+    width: 316px;
+    font-weight: 307;
+}
+.ambulance-form-provider .with-oxygen {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 210px;
+}
+.ambulance-form-provider .without-oxygen {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 193px;
+}
+.ambulance-form-provider .x24x7-service {
+  height: 32px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-left: 21px;
+  min-height: 32px;
+  width: 193px;
+}
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+* {
+  box-sizing: border-box;
+}
+.container-center-horizontal {
+  pointer-events: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+.container-center-horizontal > * {
+  pointer-events: auto;
+  flex-shrink: 0;
+}
+.screen a {
+  text-decoration: none;
+  display: contents;
+}
