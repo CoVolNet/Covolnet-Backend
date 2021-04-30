@@ -615,7 +615,7 @@ body {
 }
 .button {
   border-radius: 10px;
-  background-color:#0a98c0 ;
+  background-color:#0a98c0;
   height: 70px;
   left: -10;
   position: absolute;
@@ -652,6 +652,60 @@ body {
   opacity: 1;
   right: 0;
 }
+/* #open-button {
+  background-color: #555;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  /* position: fixed; */
+  /* bottom: 23px; */
+  /* right: 28px; */
+  /* width: 280px; */
+/* } */
+.form-popup {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 480;
+  /* border: 3px solid #f1f1f1; */
+  z-index: 9;
+  width: 300;
+  height: 00;
+  top: 200;
+}
+
+.frm-container {
+  max-width: 1500px;
+  padding: 20px;
+  background-color: #d1ddeb;
+  outline: none;
+  border-radius: 10px;
+}
+
+/* 
+.frm-container{
+  background-color: #ddd;
+  
+} */
+.frm-container .btn {
+  background-color: #0a98c0;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.frm-container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+
+
 
 .vol-reg-form-combined .submit {
   color: var(--white);
