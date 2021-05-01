@@ -51,7 +51,7 @@ MIDDLEWARE = [
 
 
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -120,8 +120,19 @@ if not DEBUG:
         ],
         'DEFAULT_PARSER_CLASSES': [
             'rest_framework.parsers.JSONParser',
+        ],
+        'DEFAULT_AUTHENTICATION_CLASSES': [
+            # 'rest_framework_simplejwt.authentication.JWTAuthentication',
+            'rest_framework.authentication.BasicAuthentication',
+            'rest_framework.authentication.SessionAuthentication',
+            # 'rest_framework.authentication.TokenAuthentication',
+        ],
+        'DEFAULT_PERMISSIONS_CLASSES': [
+            'rest_framework.permissions.IsAuthenticated',
+
         ]
     }
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.2/topics/i18n/
