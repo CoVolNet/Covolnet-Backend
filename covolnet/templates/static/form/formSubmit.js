@@ -31,6 +31,8 @@
 
 const URL = "https://covolnet.herokuapp.com/api/forms/volunteer/";
 
+const csrftoken = document.querySelector("[name=csrfmiddlewaretoken]").value;
+
 // test button
 // const test = document.getElementById("test")
 
@@ -175,6 +177,7 @@ async function sendFetchReq(obj) {
   http.open("POST", URL, true);
   http.setRequestHeader("Content-type", "application/json");
   http.setRequestHeader("Access-Control-Allow-Origin", "*");
+  http.setRequestHeader("CSRFToken", csrftoken);
   http.onload = () => console.log(this.repsonseText);
   http.send(JSON.stringify(obj));
 }
@@ -191,6 +194,7 @@ async function openForm() {
   const response = await fetch(URL, {
     method: "POST",
     headers: {
+      "X-CSRFToken": csrftoken,
       "Content-Type": "application/json",
       Accept: "application/json",
     },
