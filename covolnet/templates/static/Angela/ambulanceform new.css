@@ -1,3 +1,165 @@
+.fname {
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 740px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+.dist {
+  background-color: #dfdfdf;
+  height: 30px;
+  /* left: 237px; */
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  top: -10px;
+  width: 370px;
+}
+
+.radname {
+  background-color: #dfdfdf;
+  height: 30px;
+  left: -20;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  top: 5;
+  width: 150;
+}
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+  background-color: #2196f3;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.button {
+  border-radius: 10px;
+  background-color: #0a98c0;
+  height: 70px;
+  left: -5;
+  position: absolute;
+  top: -25;
+  width: 200px;
+  border: none;
+  text-align: center;
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  padding: 20px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+.button:hover span {
+  padding-right: 25px;
+}
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.state-ut {
+  background-color: #dfdfdf;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  top: -10px;
+  width: 370px;
+}
+.phonenumber {
+  background-color: #dfdfdf;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  width: 370px;
+  /* left: 150; */
+  /* top: -30px; */
+}
+.whatsappno {
+  background-color: #dfdfdf;
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  position: absolute;
+  width: 370px;
+}
+.spec-skill {
+  background-color: #dfdfdf;
+  height: 30px;
+  width: 340px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  position: absolute;
+}
+
 .ambulance-form-provider {
   align-items: flex-end;
   background-color: rgba(209, 221, 235, 1);
@@ -5,37 +167,36 @@
   flex-direction: column;
   height: 1900px;
   width: 1024px;
-
 }
 .ambulance-form-provider .about-us {
-  font-family: 'Open Sans' ,sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 40px;
   margin-left: 2px;
-  margin-top: 2.0px;
+  margin-top: 2px;
   min-height: 22px;
   min-width: 96px;
   white-space: nowrap;
   width: 96px;
 }
 .ambulance-form-provider .contact-us {
-  font-family: 'Open Sans' , sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 40px;
   margin-left: 26px;
-  margin-top: 2.0px;
+  margin-top: 2px;
   min-height: 22px;
   white-space: nowrap;
 }
 .ambulance-form-provider .covid-19-india {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 40px;
   margin-left: 2px;
-  margin-top: 2.0px;
+  margin-top: 2px;
   min-height: 22px;
   min-width: 140px;
   white-space: nowrap;
@@ -140,10 +301,10 @@
   min-width: 172px;
 }
 .ambulance-form-provider .help {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   left: 0;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 40px;
   position: absolute;
   top: 0;
@@ -176,20 +337,20 @@
 }
 .ambulance-form-provider .overlap-group {
   align-items: flex-end;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   align-self: center;
   background-color: white;
   border-radius: 45px;
   display: flex;
   flex-direction: column;
-  margin-left: 1.0px;
+  margin-left: 1px;
   margin-top: 65px;
   min-height: 1633px;
   padding: 60px 0;
   width: 869px;
 }
 .ambulance-form-provider .overlap-group1 {
-  font-family: 'Times New Roman', Times, serif;
+  font-family: "Times New Roman", Times, serif;
   align-items: flex-start;
   background-color: white;
   box-shadow: 0px 5px 10px #102b403d;
@@ -229,7 +390,7 @@
 .ambulance-form-provider .overlap-group5 {
   height: 51px;
   margin-left: 51px;
-  margin-top: 10.0px;
+  margin-top: 10px;
   position: relative;
   width: 487px;
 }
@@ -241,7 +402,7 @@
 .ambulance-form-provider .overlap-group7 {
   height: 27px;
   margin-left: 29px;
-  margin-top: 2.0px;
+  margin-top: 2px;
   position: relative;
   width: 55px;
 }
@@ -265,7 +426,7 @@
   width: 110px;
 }
 .ambulance-form-provider .path-1 {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   height: 6px;
   left: 45px;
@@ -284,10 +445,10 @@
   width: 695px;
 }
 .ambulance-form-provider .place {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   left: 281px;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 40px;
   position: absolute;
   top: 2px;
@@ -391,24 +552,24 @@
   width: 708px;
 }
 .ambulance-form-provider .services {
-  font-family: 'Open Sans',sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
   align-self: center;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 15px;
   margin-left: 2px;
-  margin-top: 4.0px;
+  margin-top: 4px;
   min-height: 22px;
   min-width: 32px;
   white-space: nowrap;
 }
 .ambulance-form-provider .services-1 {
-  font-family: 'Open Sans' ,sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-weight: 600;
-  letter-spacing: 0.30px;
+  letter-spacing: 0.3px;
   line-height: 40px;
   margin-left: 11px;
-  margin-top: 2.0px;
+  margin-top: 2px;
   min-height: 22px;
   min-width: 92px;
   white-space: nowrap;
@@ -467,7 +628,7 @@
 .ambulance-form-provider .text-1 {
   color: black;
   font-family: "Montserrat", sans-serif;
-  font-size:xx-large;
+  font-size: xx-large;
   font-weight: 700;
   letter-spacing: 0;
   line-height: 32px;
@@ -543,16 +704,16 @@
 }
 .ambulance-form-provider .title {
   color: #413e66;
-    font-family: 'Montserrat', sans-serif;
-    font-size: xx-large;
-    left: 0;
-    letter-spacing: 0.70px;
-    line-height: 40px;
-    position: absolute;
-    top: -20;
-    white-space: nowrap;
-    width: 316px;
-    font-weight: 307;
+  font-family: "Montserrat", sans-serif;
+  font-size: xx-large;
+  left: 0;
+  letter-spacing: 0.7px;
+  line-height: 40px;
+  position: absolute;
+  top: -20;
+  white-space: nowrap;
+  width: 316px;
+  font-weight: 307;
 }
 .ambulance-form-provider .with-oxygen {
   height: 32px;
