@@ -21,7 +21,7 @@ class VolunteerModel(models.Model):
     discord_community = models.BooleanField(default=False)
 
     social_media = ArrayField(models.CharField(
-        max_length=254, null=True, blank=True), null=True, blank=False)
+        max_length=254), null=True, blank=False)
 
     preferred_work = ArrayField(models.CharField(choices=[(
         'VERIFICATION', 'VERIFICATION'), ('COLLATE', 'COLLATE'), ('SOS-HELP', 'SOS-HELP'), ], max_length=20), null=True, blank=False)
