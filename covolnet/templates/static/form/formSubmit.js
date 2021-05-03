@@ -155,7 +155,7 @@ const makeObject = ({
     languages,
     preferred_days,
     preferred_timings,
-    social_media: social_media.map((social) => social.value),
+    social_media: social_media.map((social) => social.value === "" ? "null" : social.value),
     preferred_work: preferred_work_list,
     discord_community,
     specific_skills: specific_skills.value,
