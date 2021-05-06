@@ -154,7 +154,7 @@ const openForm = async () => {
         method:"POST",
         headers:{
             'Content-Type': 'application/json',
-            // 'X-CSRFToken': document.querySelector("[name=csrfmiddlewaretoken]").value,
+            'X-CSRFToken': document.querySelector("[name=csrfmiddlewaretoken]").value,
             'Accept':'application/json'
         },
         body:JSON.stringify(obj)
