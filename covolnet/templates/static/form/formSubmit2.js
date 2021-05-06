@@ -146,18 +146,19 @@ async function sendFetchReq(obj) {
 }
 
 const openForm = async () => {
-    let obj = makeObject({name, state, district, language_array, days_of_week, timing_list})
+  document.querySelector(".form-popup").style.display = "flex"
+
+  let obj = makeObject({name, state, district, language_array, days_of_week, timing_list})
     // console.log(obj);
     const response = await fetch(URL, {
         method:"POST",
         headers:{
             'Content-Type': 'application/json',
-            'X-CSRFToken': document.querySelector("[name=csrfmiddlewaretoken]").value,
+            // 'X-CSRFToken': document.querySelector("[name=csrfmiddlewaretoken]").value,
             'Accept':'application/json'
         },
         body:JSON.stringify(obj)
     })
     const data = await response.json()
     console.log(data);
-    document.getElementById("myForm").style.display = ""
 }
