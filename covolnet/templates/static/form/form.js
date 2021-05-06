@@ -45,14 +45,13 @@ $(function () {
     var phone = $(".phonenumber").val() != '' ? true : false;
     console.log(name, state, dist, lang, day, time, verify, discord, phone);
     if (name && state && dist && lang && day && time && verify && discord && phone) {
-      $(".overlap-group5").html('<button class="button" id="open-button" onclick="functionindex()"><span style="color: white">Submit</span></button>');
+      $(".overlap-group5").html('<button class="button" id="open-button" onclick="openForm()"><span style="color: white">Submit</span></button>');
     } else {
       $(".overlap-group5").html('');
     }
   });
 });
-function functionindex(){
-  location.href="temppage.html"
+
 }
 function specifyRate(paid) {
   var Rate = document.getElementById("Rate");
