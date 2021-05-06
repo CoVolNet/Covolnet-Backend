@@ -1,4 +1,58 @@
 /*
+  const makeObject = ({
+    name,
+    state,
+    district,
+    language_array,
+    days_of_week,
+    timing_list,
+  }) => {
+    let languages = [];
+    language_array.forEach((language) => {
+      if (language.checked) {
+        if (language.id == "english-radio") languages.push("ENGLISH");
+        if (language.id == "hindi-radio") languages.push("HINDI");
+        if (language.id == "chkOthers") languages.push(otherLang.value);
+      }
+    });
+    let preferred_days = [];
+    days_of_week.forEach((day) => {
+      if (day.checked) preferred_days.push(day.id);
+    });
+    let preferred_timings = [];
+    timing_list.forEach((time) => {
+      // console.log(time)
+      if (time.checked) preferred_timings.push(time.id);
+    });
+    let preferred_work_list = [];
+    preferred_work.forEach((work) => {
+      if (work.checked) preferred_work_list.push(work.id);
+    });
+  
+    discord_community = discord_yes.checked ? true : false;
+    // console.log(languages);
+    let obj = {
+      name: name.value,
+      state: state.value,
+      district: district.value,
+      phone: phone.value,
+      whatsapp: whatsapp.value,
+      languages,
+      preferred_days,
+      preferred_timings,
+      social_media: social_media.map((social) => social.value),
+      preferred_work: preferred_work_list,
+      discord_community,
+      specific_skills: specific_skills.value,
+      email: "xyz@gmail.com",
+    };
+    return obj;
+  };
+
+
+
+
+
 {
     "name": "fdhhfn",
     "email": "yjmgm@mail.com",
@@ -114,63 +168,6 @@ const discord_yes = document.getElementById("discord-yes");
 const specific_skills = document.getElementById("specific_skills");
 
 // makeObject
-const makeObject = ({
-  name,
-  state,
-  district,
-  language_array,
-  days_of_week,
-  timing_list,
-}) => {
-  let languages = [];
-  language_array.forEach((language) => {
-    if (language.checked) {
-      if (language.id == "english-radio") languages.push("ENGLISH");
-      if (language.id == "hindi-radio") languages.push("HINDI");
-      if (language.id == "chkOthers") languages.push(otherLang.value);
-    }
-  });
-  let preferred_days = [];
-  days_of_week.forEach((day) => {
-    if (day.checked) preferred_days.push(day.id);
-  });
-  let preferred_timings = [];
-  timing_list.forEach((time) => {
-    // console.log(time)
-    if (time.checked) preferred_timings.push(time.id);
-  });
-  let preferred_work_list = [];
-  preferred_work.forEach((work) => {
-    if (work.checked) preferred_work_list.push(work.id);
-  });
-
-  discord_community = discord_yes.checked ? true : false;
-  // console.log(languages);
-  let obj = {
-    name: name.value,
-    state: state.value,
-    district: district.value,
-    phone: phone.value,
-    whatsapp: whatsapp.value,
-    languages,
-    preferred_days,
-    preferred_timings,
-    social_media: social_media.map((social) => social.value),
-    preferred_work: preferred_work_list,
-    discord_community,
-    specific_skills: specific_skills.value,
-    email: "xyz@gmail.com",
-  };
-  return obj;
-};
-
-// test.addEventListener('click', (event) => {
-//     event.preventDefault()
-//     // let obj = makeObject({name, state, district,
-//     //                         language_array, days_of_week,
-//     //                         timing_list})
-
-// })
 
 async function sendFetchReq(obj) {
   var http = new XMLHttpRequest();
@@ -183,14 +180,6 @@ async function sendFetchReq(obj) {
 }
 
 async function openForm() {
-  let obj = makeObject({
-    name,
-    state,
-    district,
-    language_array,
-    days_of_week,
-    timing_list,
-  });
   const response = await fetch(URL, {
     method: "POST",
     headers: {
