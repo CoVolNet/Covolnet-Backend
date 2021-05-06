@@ -122,7 +122,7 @@ const makeObject = ({
       state: state.value,
       district: district.value,
       phone: phone.value,
-      whatsapp: whatsapp.value,
+      whatsapp: whatsapp.value === "" ? null : whatsapp.value,
       languages,
       preferred_days,
       preferred_timings,
