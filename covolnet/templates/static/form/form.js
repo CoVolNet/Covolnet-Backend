@@ -52,7 +52,6 @@ $(function () {
   });
 });
 
-}
 function specifyRate(paid) {
   var Rate = document.getElementById("Rate");
   Rate.disabled = paid.checked ? false : true;
