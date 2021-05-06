@@ -45,9 +45,50 @@ $(function () {
     var phone = $(".phonenumber").val() != '' ? true : false;
     console.log(name, state, dist, lang, day, time, verify, discord, phone);
     if (name && state && dist && lang && day && time && verify && discord && phone) {
-      $(".overlap-group5").html('<button class="button" id="open-button" onclick="openForm()"><span style="color: white">Submit</span></button>');
+      $(".overlap-group5").html('<button class="button" id="open-button" onclick="functionindex()"><span style="color: white">Submit</span></button>');
     } else {
       $(".overlap-group5").html('');
     }
   });
 });
+function functionindex(){
+  location.href="temppage.html"
+}
+function specifyRate(paid) {
+  var Rate = document.getElementById("Rate");
+  Rate.disabled = paid.checked ? false : true;
+  if (!Rate.disabled)
+    Rate.focus();
+}
+function disableRateBox(free) {
+  var Rate = document.getElementById("Rate");
+  Rate.disabled = free.checked ? true : false;
+  if (Rate.disabled) {
+    document.getElementById("Rate").value = "NiLL";
+    Rate.blur();
+  }
+}
+function specifytiming(forSpecificHrs) {
+  var serviceTiming = document.getElementById("serviceTiming");
+  serviceTiming.disabled = forSpecificHrs.checked ? false : true;
+  if (!serviceTiming.disabled)
+    serviceTiming.focus();
+}
+function disableServiceBox(fullTimeService) {
+  var serviceTiming = document.getElementById("serviceTiming");
+  serviceTiming.disabled = fullTimeService.checked ? true : false;
+  if (serviceTiming.disabled) {
+    serviceTiming.blur();
+    document.getElementById("serviceTiming").value = "NILL";
+  }
+}
+function enableDisableOtherBox(Other) {
+  var otherBox = document.getElementById("otherBox");
+  otherBox.disabled = Other.checked ? false : true;
+  if (!otherBox.disabled)
+    otherBox.focus();
+  else {
+    otherBox.blur();
+    document.getElementById("otherBox").value = "NILL";
+  }
+}
