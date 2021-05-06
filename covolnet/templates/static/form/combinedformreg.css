@@ -668,12 +668,12 @@ body {
   display: none;
   position: fixed;
   bottom: 0;
-  right: 480;
+  right: 480px;
   /* border: 3px solid #f1f1f1; */
   z-index: 9;
-  width: 300;
-  height: 00;
-  top: 200;
+  width: 300px;
+  height: 100;
+  top: 200px;
 }
 
 .frm-container {
