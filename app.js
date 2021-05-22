@@ -16,15 +16,17 @@ app.use(express.static(path.join(__dirname, "public")))
 app.use("/volunteer", express.static(path.join(__dirname, "build")))
 
 app.post("/volunteer", async (req, res) => {
-    validation(req.body) ? res.status(200) : res.status(400).send("ERROR")
-    
+    validation(req.body) ? res.status(200) : res.status(400).json({error:"Client side error"})
+   
+    console.log(req.body);
+    res.status(200).json(req.body)
     try {
         const querySnapshot = await database.collection("volunteers").add(req.body)
-        res.status(200).send(req.body)
+        res.status(200).json(req.body)
 
     } catch (error) {
         console.error(error);
-        res.status(500).send(error)
+        res.status(500).json({error})
     }
 })
 
